@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Rocket Elevators</title>
+		<link rel="shortcut icon" type="image" href="assets/images/rocket/rocketicon.jpg">
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+	</head>
+
+	<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/_smarty/boxed_background/1.jpg"
+	-->
+	<body class="smoothscroll enable-animation grain-orange">
+
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<!-- 
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.b-0 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+				
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent b-0"
+			-->
+			<div id="header" class="navbar-toggleable-md sticky transparent clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- Logo -->
+						<a class="logo float-left scrollTo" href="#top">
+							<img src="assets/images/rocket/logo3.png" alt="logo3" />
+						</a>
+
+						<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+							<nav class="nav-main">
+
+								<!-- 
+									.nav-onepage
+									Required for onepage navigation links
+									
+									Add .external for an external link!
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									<li class="active"><!-- HOME -->
+										<a href="http://myfame.xyz/">
+											HOME
+										</a>
+									</li>
+									<li><!-- SERVICES -->
+										<a href="http://myfame.xyz/#services">
+											SERVICES
+										</a>
+									</li>
+									<li><!-- PORTFOLIO -->
+										<a href="http://myfame.xyz/#portfolio">
+											PORTFOLIO
+										</a>
+									</li>
+									<li><!-- NEWS -->
+										<a href="http://myfame.xyz/#news">
+											NEWS
+										</a>
+									</li>
+									<li><!-- CLIENTS -->
+										<a href="http://myfame.xyz/#clients">
+											CLIENTS
+										</a>
+									</li>
+									<li><!-- CONTACT -->
+										<a href="http://myfame.xyz/#contact">
+											CONTACT
+										</a>
+									</li>
+								</ul>
+
+							</nav>
+						</div>
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+			</div>
+			<!-- HOME -->
+			<section id="slider" class="h-650" style="background:url('assets/images/rocket/elev6.jpeg')">
+				<div class="overlay dark-5"><!-- dark overlay [1 to 9 opacity] --></div>
+
+				<div class="display-table">
+					<div class="display-table-cell vertical-align-middle">
+						
+						<div class="container text-center">
+							
+							<h1 class="m-0 fs-50 fw-300 wow fadeInUp" data-wow-delay="0.4s">Rocket Elevators</h1>
+							<p class="lead font-lato fs-30 wow fadeInUp" data-wow-delay="0.7s">We elevate safety, speed and style.</p>
+							
+							<!-- fill in id -->
+							<form method="post" action="quote.html" class="row mt-80 landing-form">
+									<button class="btn btn-3d btn-secondary btn-lg center-horizontal"><i class="glyphicon glyphicon-th-large"></i>Quotation</button>
+							</form>
+
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<!-- /HOME -->
+
+
+
+
+			<!-- FEATURES -->
+			<section id="features">
+				<div class="container">
+
+					<header class="text-center mb-60">
+						<h2>Our Portfolio</h2>
+						<p class="lead font-lato">Leader in Innovative Design, Quality and Sustainable Products and Professional Service.</p>
+						<hr />
+					</header>
+
+					<!-- FEATURED BOXES 3 -->
+					<div class="row">
+						<div class="col-md-3 col-6">
+							<div class="text-center">
+								<i class="ico-light ico-lg ico-rounded ico-hover et-circle-compass"></i>
+								<h4>Luxury Condominiums</h4>
+								<p>Quinzecent, Montréal</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-6">
+							<div class="text-center">
+								<i class="ico-light ico-lg ico-rounded ico-hover et-piechart"></i>
+								<h4>Skyscrapers</h4>
+								<p>CT Tower, Vancouver</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-6">
+							<div class="text-center">
+								<i class="ico-light ico-lg ico-rounded ico-hover et-strategy"></i>
+								<h4>Glass Elevators</h4>
+								<p>W Building, Chicago/p>
+							</div>
+						</div>
+						<div class="col-md-3 col-6">
+							<div class="text-center">
+								<i class="ico-light ico-lg ico-rounded ico-hover et-streetsign"></i>
+								<h4>Car Elevators</h4>
+								<p>Porsche</p>
+							</div>
+						</div>
+					</div>
+					<!-- /FEATURED BOXES 3 -->
+
+					<!-- FEATURED BOXES 3 -->
+					<div class="row">
+						<div class="col-md-3 col-6">
+							<div class="text-center">
+								<i class="ico-light ico-lg ico-rounded ico-hover et-trophy"></i>
+								<h4>Custom Designs</h4>
+								<p>Imperial Building, Rinowa</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-6">
+							<div class="text-center">
+								<i class="ico-light ico-lg ico-rounded ico-hover et-gears"></i>
+								<h4>Ultra Modern Design</h4>
+								<p>ABC Design Inc.</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-6">
+							<div class="text-center">
+								<i class="ico-light ico-lg ico-rounded ico-hover et-tools"></i>
+								<h4>International Projects</h4>
+								<p>Four Winds Mall, Dubai</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-6">
+							<div class="text-center">
+								<i class="ico-light ico-lg ico-rounded ico-hover et-layers"></i>
+								<h4>Best Materials</h4>
+								<p>Research and Development Award</p>
+							</div>
+						</div>
+					</div>
+					<!-- /FEATURED BOXES 3 -->
+
+				</div>
+			</section>
+			<!-- /FEATURES -->
+
+
+
+
+			<!-- PRICING -->
+			<section id="pricing">
+				<div class="container">
+
+					<header class="text-center mb-60">
+						<h2>Our Pricing</h2>
+						<p class="lead font-lato">Choose from our variety of packages to suit your needs.</p>
+						<hr />
+					</header>
+
+					<div class="row">
+
+						<div class="col-md-3 col-sm-3">
+							
+							<div class="price-clean">                                
+								<h4>
+									<sup>$</sup>999<em>/month</em>
+								</h4>
+								<h5>EARTH</h5>
+								<hr />
+								<p>Simple, Safe, Reliable.</p>
+								<hr />
+								<a href="quote.html" class="btn btn-3d btn-teal">Learn More</a>
+							</div>
+						
+						</div>
+
+						<div class="col-md-3 col-sm-3">
+							
+							<div class="price-clean">                                
+								<h4>
+									<sup>$</sup>1,999<em>/month</em>
+								</h4>
+								<h5>STRATOSPHERE</h5>
+								<hr />
+								<p>Quality and Speed.</p>
+								<hr />
+								<a href="quote.html" class="btn btn-3d btn-teal">Learn More</a>
+							</div>
+						
+						</div>
+
+						<div class="col-md-3 col-sm-3">
+							
+							<div class="price-clean price-clean-popular"> 
+								<div class="ribbon"> 
+									<div class="ribbon-inner">POPULAR</div>
+								</div>
+								
+								<h4>
+									<sup>$</sup>2,999<em>/month</em>
+								</h4>
+								<h5>MOON</h5>
+								<hr />
+								<p>Efficiency, Style, Durability</p>
+								<hr />
+								<a href="quote.html" class="btn btn-3d btn-primary">Learn More</a>
+							</div>
+						
+						</div>
+
+						<div class="col-md-3 col-sm-3">
+							
+							<div class="price-clean">                                
+								<h4>
+									<sup>$</sup>3,999<em>/month</em>
+								</h4>
+								<h5>COSMOS</h5>
+								<hr />
+								<p>Leading Engineers, Top Materials, Innovation at it's Best.</p>
+								<hr />
+								<a href="quote.html" class="btn btn-3d btn-teal">Learn More</a>
+							</div>
+						
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+			<!-- /PRICING -->
+
+
+
+			<!-- TESTIMONIALS -->
+			<section id="testimonials" class="alternate">
+				<div class="container">
+
+					<header class="text-center mb-60">
+						<h2>Testimonials</h2>
+						<p class="lead font-lato">What our customers have to say</p>
+						<hr />
+					</header>
+
+					<!-- 
+						Note: remove class="rounded" from the img for squared image!
+					-->
+					<ul class="row clearfix testimonial-dotted list-unstyled">
+						<li class="col-md-4">
+							<div class="testimonial">
+								<figure class="float-left">
+									<img class="rounded" src="assets/images/people/300x300/12-min.jpg" alt="" />
+								</figure>
+								<div class="testimonial-content">
+									<p>Amazing team, professional service every step of the way!</p>
+									<cite>
+										Brenda Forest
+										<span>Vice-President, Metalico Ltd.</span>
+									</cite>
+								</div>
+							</div>
+						</li>
+						<li class="col-md-4">
+							<div class="testimonial">
+								<figure class="float-left">
+									<img class="rounded" src="assets/images/people/300x300/11-min.jpg" alt="" />
+								</figure>
+								<div class="testimonial-content">
+									<p>The products are beyond industry standards. Very impressive.</p>
+									<cite>
+										Janet Johnson
+										<span>CEO, Blake & Ass.</span>
+									</cite>
+								</div>
+							</div>
+						</li>
+							<li class="col-md-4">
+								<div class="testimonial">
+									<figure class="float-left">
+										<img class="rounded" src="assets/images/people/300x300/1-min.jpg" alt="" />
+									</figure>
+									<div class="testimonial-content">
+										<p>We're a small company so we chose the Earth Package. We're extremely satisfied!</p>
+										<cite>
+											Melissa Queen
+											<span>Owner, Tristan & Co.</span>
+										</cite>
+									</div>
+								</div>
+							</li>
+							<li class="col-md-4">
+								<div class="testimonial">
+									<figure class="float-left">
+										<img class="rounded" src="assets/images/people/300x300/2-min.jpg" alt="" />
+									</figure>
+									<div class="testimonial-content">
+										<p>Best in the industry. Top standards and personnel.</p>
+										<cite>
+											Ellen Jones
+											<span>Project Manager, Designex Ltd.</span>
+										</cite>
+									</div>
+								</div>
+							</li>
+							<li class="col-md-4">
+								<div class="testimonial">
+									<figure class="float-left">
+										<img class="rounded" src="assets/images/people/300x300/6-min.jpg" alt="" />
+									</figure>
+									<div class="testimonial-content">
+										<p>From start to finish, they listened to our needs, met our requirements and even surpassed our expectations!</p>
+										<cite>
+											Isabel McGee
+											<span>Chief of Operations, Anagram Ltd.</span>
+										</cite>
+									</div>
+								</div>
+							</li>
+							<li class="col-md-4">
+								<div class="testimonial">
+									<figure class="float-left">
+										<img class="rounded" src="assets/images/people/300x300/7-min.jpg" alt="" />
+									</figure>
+									<div class="testimonial-content">
+										<p>The company's attention to sustainability is laudable. These are leaders of the future.</p>
+										<cite>
+											Stephanie Green
+											<span>President, Lang & Associates Ltd.</span>
+										</cite>
+									</div>
+								</div>
+							</li>
+							<li class="col-md-4">
+								<div class="testimonial">
+									<figure class="float-left">
+										<img class="rounded" src="assets/images/people/300x300/8-min.jpg" alt="" />
+									</figure>
+									<div class="testimonial-content">
+										<p>Your elevators are simply...stunning. They deliver what they promise.</p>
+										<cite>
+											Pamela Mongrain
+											<span>La Montagne Ltd.</span>
+										</cite>
+									</div>
+								</div>
+							</li>
+							<li class="col-md-4">
+								<div class="testimonial">
+									<figure class="float-left">
+										<img class="rounded" src="assets/images/people/300x300/11-min.jpg" alt="" />
+									</figure>
+									<div class="testimonial-content">
+										<p>Not a single regret! Deserves every cent we paid.</p>
+										<cite>
+											Simina Owens
+											<span>Quarks Ltd.</span>
+										</cite>
+									</div>
+								</div>
+							</li>
+							<li class="col-md-4">
+								<div class="testimonial">
+									<figure class="float-left">
+										<img class="rounded" src="assets/images/people/300x300/12-min.jpg" alt="" />
+									</figure>
+									<div class="testimonial-content">
+										<p>Outstanding elevators. We enjoy smooth and truly rocket-fast rides up our work tower everyday! Never felt so safe.</p>
+										<cite>
+											Mihaela Brown
+											<span>Canon Inc.</span>
+										</cite>
+									</div>
+								</div>
+							</li>
+					</ul>
+
+				</div>
+			</section>
+			<!-- /TESTIMONIALS -->
+
+			<!-- -->
+			<section>
+				<div class="container">
+					
+					<div class="row">
+					
+						<div class="col-lg-4">
+
+							<div class="heading-title heading-border-bottom">
+								<h3>Rocket Vision</h3>
+							</div>
+
+							<div class="toggle toggle-transparent-body toggle-accordion">
+
+								<div class="toggle active">
+									<label>Who we are?</label>
+									<div class="toggle-content">
+										<p>Leading experts in elevator technology, innovation and installation.</p>
+									</div>
+								</div>
+
+								<div class="toggle">
+									<label>Our long-term vison</label>
+									<div class="toggle-content">
+										<p>To see our elevators in every corner of the world and to help build a sustainable future.</p>
+									</div>
+								</div>
+
+								<div class="toggle">
+									<label>How can we help you?</label>
+									<div class="toggle-content">
+										<p>Custom Design, Best Materials, Innovative Technology, Installation, Repair.</p>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="col-lg-4">
+
+							<div class="heading-title heading-border-bottom">
+								<h3>Our expertise.</h3>
+							</div>
+
+							<div class="progress progress-lg"><!-- progress bar -->
+								<div class="progress-bar progress-bar-warning progress-bar-striped active text-left" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%; min-width: 2em;">
+									<span>Design 90%</span>
+								</div>
+							</div><!-- /progress bar -->
+
+							<div class="progress progress-lg"><!-- progress bar -->
+								<div class="progress-bar progress-bar-danger progress-bar-striped active text-left" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%; min-width: 2em;">
+									<span>Innovation 98%</span>
+								</div>
+							</div><!-- /progress bar -->
+
+							<div class="progress progress-lg"><!-- progress bar -->
+								<div class="progress-bar progress-bar-success progress-bar-striped active text-left" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%; min-width: 2em;">
+									<span>Research & Development 60%</span>
+								</div>
+							</div><!-- /progress bar -->
+
+							<div class="progress progress-lg"><!-- progress bar -->
+								<div class="progress-bar progress-bar-info progress-bar-striped active text-left" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width: 88%; min-width: 2em;">
+									<span>Installation 88%</span>
+								</div>
+							</div><!-- /progress bar -->
+
+						</div>
+
+						<div class="col-lg-4">
+
+							<div class="heading-title heading-border-bottom">
+								<h3>Promotions</h3>
+							</div>
+							
+							<p>Free first consultation for first-time customers!</p>
+							
+							<a href="quote.html" class="btn btn-default btn-block btn-lg">Contact us for a QUOTE.</a>
+							
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+			<!-- / -->
+
+
+
+			<!-- -->
+			<section class="alternate">
+				<div class="container">
+					
+					<div class="text-center">
+						<h2 class="wow fadeInUp m-0" data-wow-delay="0.3s">Ready to Rocket away with us?</h2>
+
+						<p class="lead font-lato fs-30 wow fadeInUp mb-60" data-wow-delay="0.5s">We are eager to bring you to greater heights.</p>
+						
+						<div class="mt-30">
+							<a href="http://myfame.xyz/#contact" class="btn btn-3d btn-lg wow fadeInUp btn-teal" data-wow-delay="0.7"><i class="glyphicon glyphicon-th-large"></i>CONTACT US</a>
+							<span class="fs-17 hidden-xs-down wow fadeInUp" data-wow-delay="1s">&nbsp; OR &nbsp;</span>
+							<a href="quote.html" class="btn btn-3d btn-lg wow fadeInUp btn-red" data-wow-delay="0.59"><i class="glyphicon glyphicon-user"></i>GET A QUOTE</a>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<!-- / -->
+
+
+
+
+
+			<!-- FOOTER -->
+			<footer id="footer">
+				<div class="container">
+
+
+					<div class="row">
+
+						<!-- col #1 -->
+						<div class="col-md-8">
+
+							<h3 class="letter-spacing-1">WHY US?</h3>
+
+							<!-- Small Description -->
+							<p>
+								We have the conviction that we create the most innovative and reliable products on the market. Contact us today for any questions you might have.
+							</p>
+							<h2><a href="tel:(418) 555-1234">(418) 555-1234
+							</a></h2>
+						</div>
+						<!-- /col #1 -->
+
+						<!-- col #2 -->
+						<div class="col-md-4">
+							<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+
+							<!-- Newsletter Form -->
+							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
+
+							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+									<span class="input-group-btn">
+										<button class="btn btn-success" type="submit">Subscribe</button>
+									</span>
+								</div>
+							</form>
+							<!-- /Newsletter Form -->
+
+
+						</div>
+						<!-- /col #2 -->
+
+					</div>
+
+
+				</div>
+
+				<div class="copyright">
+					<div class="container">
+						<ul class="float-right m-0 list-inline mobile-block">
+							<li>Terms &amp; Conditions</li>
+							<li>&bull;</li>
+							<li>Privacy</li>
+						</ul>
+						&copy; All Rights Reserved, Rocket Elevators LTD
+					</div>
+				</div>
+
+			</footer>
+			<!-- /FOOTER -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+		<script src="assets/js/scripts.js"></script>
+		
+	</body>
+</html>

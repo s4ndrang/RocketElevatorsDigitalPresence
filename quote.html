@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Quotation</title>
+        <link rel="shortcut icon" type="image" href="assets/images/rocket/quote.png"/>
+        <meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- REVOLUTION SLIDER -->
+		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/lightgrey.css" rel="stylesheet" type="text/css" id="color_scheme" />
+
+    </head>
+
+    <body class="smoothscroll enable-animation grain-blue">
+        <div id="header" class="navbar-toggleable-md sticky transparent b-0 clearfix">
+
+            <!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- Logo -->
+						<a class="logo float-left scrollTo" href="#slider">
+							<img src="assets/images/rocket/logo3.png" alt="logo3"/>
+						</a>
+
+						<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+							<nav class="nav-main">
+
+								<!-- 
+									.nav-onepage
+									Required for onepage navigation links
+									
+									Add .external for an external link!
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									<li class="active"><!-- HOME -->
+										<a id="home-nav" href="#slidetop">
+											HOME
+										</a>
+									</li>
+									<li><!-- SERVICES -->
+										<a id="services-nav" href="#services">
+											SERVICES
+										</a>
+									</li>
+									<li><!-- WORK -->
+										<a id="portfolio-nav" href="#portfolio">
+											PORTFOLIO
+										</a>
+									</li>
+									<li><!-- NEWS -->
+										<a id="news-nav" href="#news">
+											NEWS
+										</a>
+									</li>
+									
+									<li><!-- CLIENTS -->
+										<a id="clients-nav" href="#clients">
+											CLIENTS
+										</a>
+									</li>
+									
+									<li><!-- CONTACT -->
+										<a id="contact-nav" href="#contact">
+											CONTACT
+										</a>
+									</li>
+								</ul>
+
+							</nav>
+						</div>
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+			</div>
+<!-- FORM -->      
+<!-- Building Type -->
+            <div class="container mt-100" style="border-style:solid">
+                <form action="/action_page.php" method="post" enctype="multipart/form-data">
+
+                    <label for="building-type">Please select your Building Type:</label>
+                    <select name="building-type" id="building-type" required>
+                        <option hidden>Select Building Type</option>
+                        <option value="residential" id="residential">residential</option>
+                        <option value="commercial" id="commercial">commercial</option>
+                        <option value="corporate" id="corporate">corporate</option>
+                        <option value="hybrid" id="hybrid" >hybrid</option>
+                    </select>
+    
+                    <br>
+                
+                    <div id="number-of-apartments" class="all residential">
+                        <label for="numApartment">Number of Apartments :</label>
+                        <input type="number" class="quote-input" id="numApartment" min="1" name="numApartment" required><br>
+                    </div>
+
+                    <div id="number-of-floors" class="all residential commercial corporate hybrid">
+                        <label for="numUppLevel">Number of Floors (excluding basements) :</label>
+                        <input type="number" id="numUppLevel" class="quote-input" min="1" name="numUppLevel" required><br>
+                    </div>
+
+                    <div id="number-of-basements" class="all residential commercial corporate hybrid">
+                        <label for="numBasement">Number of Basements :</label>
+                        <input type="number" id="numBasement" class="quote-input" min="1" name="numBasement" required><br>
+                    </div>
+
+                    <div id="number-of-companies" class="all commercial hybrid">
+                        <label for="numBusiness">Number of Businesses :</label>
+                        <input type="number" id="numBusiness" class="quote-input" min="1" name="numBusiness"><br>
+                    </div>
+
+                    <div id="number-of-parking-spots" class="all commercial corporate hybrid">
+                        <label for="numParking">Number of Parking Spaces :</label>
+                        <input type="number" id="numParking" class="quote-input" min="1" name="numParking"><br>
+                    </div>
+
+                    <div id="number-of-elevators" class="all commercial">
+                        <label for="numCage">Number of Elevator Cages :</label>
+                        <input type="number" id="numCage" class="quote-input" min="1" name="numCage" required><br>
+                    </div>
+
+                    <div id="number-of-corporations" class="all corporate">
+                        <label for="numTenant">Number of Tenant Companies :</label>
+                        <input type="number" id="numTenant" class="quote-input" min="1" name="numTenant"><br>
+                    </div>
+
+                    <div id="maximum-occupancy" class="all corporate hybrid">
+                        <label for="numOccupant">Number of Occupants per Floor :</label>
+                        <input type="number" id="numOccupant" class="quote-input" min="1" name="numOccupant" required><br>
+                    </div>
+
+                    <div id="business-hours" class="all hybrid">
+                        <label for="numHoursActivity">Number of Hours of Activity per Day :</label>
+                        <input type="number" id="numHoursActivity" class="quote-input" min="1" name="numHoursActivity" required><br>
+                    </div>
+                        <br>
+    <!--Radio Buttons-->
+                    <div>
+                        <input type="radio" id="standard" class="quote-input" name="pdtline" value="Standard">
+                        <label for="standard">Standard: </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="premium" class="quote-input" name="pdtline" value="Premium">
+                        <label for="premium">Premium: </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="excelium" class="quote-input" name="pdtline" value="Excelium">
+                        <label for="excelium">Excelium: </label>
+                    </div>
+
+                        <!--1. Number of Elevators (Read-Only)-->
+                    <div class="col-md-2 col-sm-3 col-6">
+                            <label for="elevator-amount">Number of Elevators: </label>
+                            <input id="elevator-amount" readonly><br>
+                        </div>
+                        <!--2. Unit Price (Read-Only)-->
+                        <div class="col-md-2 col-sm-3 col-6">
+                            <label for="elevator-unit-price">Unit Price of Elevator: </label>
+                            <input id="elevator-unit-price" readonly><br>
+                        </div>
+                        <!--3. Price of Elevators (Read-Only)-->
+                        <div class="col-md-2 col-sm-3 col-6">
+                            <label for="elevator-total-price">Total Price of Elevators: </label>
+                            <input id="elevator-total-price" readonly><br>
+                        </div>
+                        <!--4. Installation Fees (Read-Only)-->
+                        <div class="col-md-2 col-sm-3 col-6">
+                            <label for="installation-fees">Installation Fees: </label>
+                            <input id="installation-fees" readonly><br>
+                        </div>
+                        <!--5. Total Price (Read-Only)-->
+                        <div class="col-md-2 col-sm-3 col-6">
+                            <label for="final-price">Final Price: </label>
+                            <input id="final-price" readonly><br>
+                        </div>
+                </form>  
+            </div>
+
+    <!-- FOOTER -->
+			<footer id="footer">
+				<div class="container">
+
+
+					<div class="row">
+
+						<!-- col #1 -->
+						<div class="col-md-8">
+
+							<h3 class="letter-spacing-1">WHY US?</h3>
+
+							<!-- Small Description -->
+							<p>
+								We have the conviction that we create the most innovative and reliable products on the market. Contact us today for any questions you might have.
+							</p>
+							<h2><a href="tel:(418) 555-1234">(418) 555-1234
+							</a></h2>
+						</div>
+						<!-- /col #1 -->
+
+						<!-- col #2 -->
+						<div class="col-md-4">
+							<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+
+							<!-- Newsletter Form -->
+							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
+
+							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+									<span class="input-group-btn">
+										<button class="btn btn-success" type="submit">Subscribe</button>
+									</span>
+								</div>
+							</form>
+							<!-- /Newsletter Form -->
+
+
+						</div>
+						<!-- /col #2 -->
+
+					</div>
+
+
+				</div>
+
+				<div class="copyright">
+					<div class="container">
+						<ul class="float-right m-0 list-inline mobile-block">
+							<li><a href="#">Terms &amp; Conditions</a></li>
+							<li>&bull;</li>
+							<li><a href="#">Privacy</a></li>
+						</ul>
+						&copy; All Rights Reserved, Rocket Elevators LTD
+					</div>
+				</div>
+
+			</footer>
+			<!-- /FOOTER -->
+
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/quote.js"></script>
+</html>
