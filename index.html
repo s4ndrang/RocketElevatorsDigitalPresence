@@ -30,27 +30,6 @@
 		<link href="assets/css/color_scheme/lightgrey.css" rel="stylesheet" type="text/css" id="color_scheme" />
 	</head>
 
-	<!--
-		AVAILABLE BODY CLASSES:
-		
-		smoothscroll 			= create a browser smooth scroll
-		enable-animation		= enable WOW animations
-
-		bg-grey					= grey background
-		grain-grey				= grey grain background
-		grain-blue				= blue grain background
-		grain-green				= green grain background
-		grain-blue				= blue grain background
-		grain-orange			= orange grain background
-		grain-yellow			= yellow grain background
-		
-		boxed 					= boxed layout
-		pattern1 ... patern11	= pattern background
-		menu-vertical-hide		= hidden, open on click
-		
-		BACKGROUND IMAGE [together with .boxed class]
-		data-background="assets/images/_smarty/boxed_background/1.jpg"
-	-->
 	<body class="smoothscroll enable-animation grain-blue">
 
 		<!-- SLIDE TOP -->
@@ -98,32 +77,6 @@
 		<!-- wrapper -->
 		<div id="wrapper">
 
-			<!-- 
-				AVAILABLE HEADER CLASSES
-
-				Default nav height: 96px
-				.header-md 		= 70px nav height
-				.header-sm 		= 60px nav height
-
-				.b-0 		= remove bottom border (only with transparent use)
-				.transparent	= transparent header
-				.translucent	= translucent header
-				.sticky			= sticky header
-				.static			= static header
-				.dark			= dark header
-				.bottom			= header on bottom
-				
-				shadow-before-1 = shadow 1 header top
-				shadow-after-1 	= shadow 1 header bottom
-				shadow-before-2 = shadow 2 header top
-				shadow-after-2 	= shadow 2 header bottom
-				shadow-before-3 = shadow 3 header top
-				shadow-after-3 	= shadow 3 header bottom
-
-				.clearfix		= required for mobile menu, do not remove!
-
-				Example Usage:  class="clearfix sticky header-sm transparent b-0"
-			-->
 			<div id="header" class="navbar-toggleable-md sticky transparent b-0 clearfix">
 
 				<!-- TOP NAV -->
@@ -140,21 +93,10 @@
 							<img src="assets/images/rocket/logo3.png" alt="logo3"/>
 						</a>
 
-						<!-- 
-							Top Nav 
-							
-							AVAILABLE CLASSES:
-							submenu-dark = dark sub menu
-						-->
+						<!-- Top Nav -->
 						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
 							<nav class="nav-main">
 
-								<!-- 
-									.nav-onepage
-									Required for onepage navigation links
-									
-									Add .external for an external link!
-								-->
 								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
 									<li class="active"><!-- HOME -->
 										<a id="home-nav" href="#slidetop">
@@ -203,34 +145,7 @@
 
 			<!-- REVOLUTION SLIDER -->
 			<div class="slider fullwidthbanner-container roundedcorners">
-				<!--
-					Navigation Styles:
-					
-						data-navigationStyle="" theme default navigation
-						
-						data-navigationStyle="preview1"
-						data-navigationStyle="preview2"
-						data-navigationStyle="preview3"
-						data-navigationStyle="preview4"
-						
-					Bottom Shadows
-						data-shadow="1"
-						data-shadow="2"
-						data-shadow="3"
-						
-					Slider Height (do not use on fullscreen mode)
-						data-height="300"
-						data-height="350"
-						data-height="400"
-						data-height="450"
-						data-height="500"
-						data-height="550"
-						data-height="600"
-						data-height="650"
-						data-height="700"
-						data-height="750"
-						data-height="800"
-				-->
+				
 				<div class="fullwidthbanner" data-height="600" data-shadow="0" data-navigationStyle="preview2">
 					<ul class="hide">
 					
@@ -289,7 +204,7 @@
 							<!-- MAIN IMAGE -->
 							<img src="assets/images/rocket/elev2.jpeg" alt="cover image"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
-							<div class="overlay dark-4"><!-- dark overlay [0 to 9 opacity] --></div>
+							<div class="overlay dark-4"></div>
 
 							<div class="tp-caption font-roboto skewfromleft tp-resizeme"
 								data-x="50"
@@ -342,7 +257,7 @@
 						<!-- MAIN IMAGE -->
 							<img src="assets/images/rocket/elev6.jpeg" alt="cover image"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
-							<div class="overlay dark-4"><!-- dark overlay [0 to 9 opacity] --></div>
+							<div class="overlay dark-4"></div>
 
 							<div class="tp-caption font-roboto skewfromleft tp-resizeme"
 								data-x="50"
@@ -396,9 +311,7 @@
 			</div>
 			<!-- /REVOLUTION SLIDER -->
 
-
 			<hr class="m-0" /><!-- 1px line separator -->
-
 
 			<!-- BUTTON CALLOUT -->
 			<a href="#contact" class="btn btn-xlg btn-primary fs-20 fullwidth m-0 rad-0 p-40">
@@ -408,8 +321,6 @@
 				</span>
 			</a>
 			<!-- /BUTTON CALLOUT -->
-
-
 			
 			<!-- Services -->
 			<section id="services">
@@ -454,7 +365,6 @@
 			</section>
 			<!-- /Parallax -->
 
-
 			<!-- PORTFOLIO -->
 			<section id="portfolio">
 				<div class="container">
@@ -477,8 +387,9 @@
 
 						<div class="row mix-grid">
 
-							<div class="col-md-3 col-sm-3 mix res_portfolio"><!-- item -->
-
+							<div class="col-md-3 col-sm-3 mix res_portfolio">
+								
+								<!-- item -->
 								<div class="item-box">
 									<figure>
 										<span class="item-hover">
